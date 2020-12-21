@@ -1,0 +1,19 @@
+os: osx
+language: node_js
+cache:
+  directories:
+    - ./
+node_js:
+  - '11'
+script: bash ./scripts/updateNews.sh 
+after_script:
+  - git init
+  - bash ./scripts/push.sh
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  target_branch: gh-pages
+  on:
+    branch: gh-pages
