@@ -1,4 +1,4 @@
-os: osx
+os: linux
 language: node_js
 cache:
   npm: false
