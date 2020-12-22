@@ -1,8 +1,7 @@
 os: osx
 language: node_js
 cache:
-  directories:
-    - ./
+  npm: false
 node_js:
   - '11'
 script: bash ./scripts/updateNews.sh 
