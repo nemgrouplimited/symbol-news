@@ -8,7 +8,8 @@ setup_git() {
 commit_updates() {
   git remote add origin-pages https://${GITHUB_TOKEN}@${GH_REF} > /dev/null 2>&1
   git remote update
-  git checkout gh-pages
+  git branch -d gh-pages
+  git checkout -b gh-pages
   git add . *.html
   git commit -m "Travis Build:  $TRAVIS_BUILD_NUMBER" --allow-empty
   echo "pulling changes from main..."
