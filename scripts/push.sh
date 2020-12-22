@@ -10,7 +10,6 @@ commit_updates() {
   git remote update
   git checkout gh-pages
   git add . *.html
-  git status
   git commit -m "Travis Build:  $TRAVIS_BUILD_NUMBER" --allow-empty 
 }
 
