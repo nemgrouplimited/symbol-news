@@ -12,9 +12,9 @@ commit_updates() {
   git add . *.html
   git commit -m "Travis Build:  $TRAVIS_BUILD_NUMBER" --allow-empty
   echo "pulling changes from main..."
-  git pull origin main
+  git pull origin-pages main
   echo "pulling changes from gh-pages..."
-  git pull origin gh-pages
+  git pull origin-pages gh-pages
 }
 
 push_updates() {
