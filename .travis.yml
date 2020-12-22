@@ -6,7 +6,6 @@ node_js:
   - '11'
 script: bash ./scripts/updateNews.sh 
 after_script:
-  - git init
   - bash ./scripts/push.sh
 deploy:
   provider: pages
