@@ -10,11 +10,15 @@ commit_updates() {
   git remote update
   git checkout gh-pages
   git add . *.html
-  git commit -m "Travis Build:  $TRAVIS_BUILD_NUMBER" --allow-empty 
+  git commit -m "Travis Build:  $TRAVIS_BUILD_NUMBER" --allow-empty
+  echo "pulling changes from main..."
+  git pull origin main
+  echo "pulling changes from gh-pages..."
+  git pull origin gh-pages
 }
 
 push_updates() {
-  ## deploy updates to github pages
+  echo "pushing updates to github..."
   git push  --set-upstream origin-pages gh-pages -f
 }
 
