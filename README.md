@@ -16,6 +16,6 @@ The [symbol-wallet](https://github.com/nemgrouplimited/symbol-desktop-wallet) us
 
 #### Basically the cron has two scripts:
 
-1. Frist [one](https://github.com/nemgrouplimited/symbol-news-scripts/blob/main/scripts/updateNewsXML.sh) updates index.html file content with latest [rss-feeds](http://rssmix.com/u/11801188/rss.xml) from rssmix.
+1. Frist [one](https://github.com/symbol/symbol-rss-feeds/blob/main/scripts/updateNews.sh) updates index.html file content with latest [rss-feeds](http://rssmix.com/u/11801188/rss.xml) from rssmix.
 
-2. Second [one](https://github.com/nemgrouplimited/symbol-news-scripts/blob/main/scripts/pushUpdates.sh) push back updates to github after querying the rss aggregator to host latest updates on [Github Pages](https://nemgrouplimited.github.io/symbol-news/).
+2. Second [one](https://github.com/symbol/symbol-rss-feeds/blob/main/scripts/push.sh) push back updates to github after querying the rss aggregator to host latest updates on [Github Pages](https://symbol.github.io/symbol-rss-feeds/).
