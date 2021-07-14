@@ -1,6 +1,6 @@
 # Symbol News
 
-[![Build Status](https://api.travis-ci.com/nemgrouplimited/symbol-news.png?branch=main)](https://travis-ci.com/nemgrouplimited/symbol-news)
+[![Build Status](https://api.travis-ci.com/symbol/symbol-rss-feeds.png?branch=main)](https://travis-ci.com/symbol/symbol-rss-feeds)
 
 Hosting RSS Feeds from rssmix aggregator to be consumed over HTTPS by [symbol-desktop-wallet](https://github.com/nemgrouplimited/symbol-desktop-wallet)
 
